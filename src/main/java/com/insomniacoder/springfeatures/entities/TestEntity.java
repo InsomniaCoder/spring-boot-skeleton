@@ -1,9 +1,14 @@
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+package com.insomniacoder.springfeatures.entities;
+
+import lombok.Data;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table
-//@Data => @Getter, @Setter, @ToString, @EqualsAndHashCode and @RequiredArgsConstructor annotations on the class (except that no constructor will be generated if any explicitly written constructor exists).
 @Data
+//@Data => @Getter, @Setter, @ToString, @EqualsAndHashCode and @RequiredArgsConstructor annotations on the class (except that no constructor will be generated if any explicitly written constructor exists).
 public class TestEntity {
 
     @Id
